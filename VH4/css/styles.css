@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+ .heading {
+    margin: 0 6rem;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #00A49C;
+  }
+  .subheading {
+    margin: 2.5rem 6rem;
+    color: #2F4858;
+  }
+.IntroImg {
+  width: 100%;
+}
+.GradientLine {
+  background-size: cover;
+  height: 3px;
+  background: linear-gradient(#00A49C, #2F4858, #FAA53F);
+  margin-top:2em;
+}
+.text-orange {
+  color: #FAA53F;
+}
+.ParallaxBg {
+  background-image: url(https://img.freepik.com/foto-gratis/puedo-manejar-tareas-multiples-foto-recortada-chica-exitosa-escribiendo-teclado-tomando-notas-mientras-mira-pantalla-computadora-estudia-nuevos-graficos-negocios-no-hay-tiempo-descansar_176420-8700.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799);
+  background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 3em;
+}
+section.container {
+  padding: 2em;
+}
+a:hover {
+  color: #FAA53F
+  font-size: 26px;
+  text-decoration: none;
+}
+/***** efecto del botón*****/
+.GradientButton {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  width: 300px;
+  height: 80px;
+  border-radius: 50px;
+  outline: none;
+  background: linear-gradient(90deg, #00A49C, #2F4858, #FAA53F, #6c757d);
+  background-size: 400%;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 4px;
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #00A49C, #2F4858, #FAA53F, #6c757d));
+  background-size: 400%;
+  border-radius: 50px;
+  opacity: 0;
+  transition: .5s;
+}
+button:hover {
+  animation: animate 10s linear infinite;
+}
+button:hover::before {
+  filter: blur(25px);
+  opacity: .8;
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/*******wave animation*********/
+
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 20%;
+  background-image: url(../img/waveB.svg);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  animation: wave 20s linear infinite;
+}
+.wave::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 20%;
+  background-image: url(../img/waveW.svg);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: .2;
+  animation: wave-reverse 10s linear infinite;
+}
+.wave::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 20%;
+  background-image: url(../img/waveT.svg);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: .8;
+  animation-delay: -4s;
+  animation: wave 15s linear infinite;
+}
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+@keyframes wave-reverse {
+  0% {
+    background-position: 100vw;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+#LogoImg {
+	height: 120px;
+}
+
+ul {
+  padding: 2em;
+}
+.stext-shadow {
+  text-shadow: 2px 2px white;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/parallax.jpg");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
+
+
+
+/*estilo de carousel*/
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+#ClientSlider {
+    z-index: 2;
+  position: relative;
+    max-width: 900px;
+    margin: auto
+}
+
+.carousel-caption {
+    position: initial;
+    padding: 5rem 8rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        padding: 3rem 2rem;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+}
+
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        margin-top: 1rem;
+    }
+}
+#name-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
+
+section.ClientSliderBackground{ 
+  height: 450px;
+  position: relative;
+  background: #FAA53F;
+
+}
+section.ClientSliderBackground:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url(https://img.freepik.com/foto-gratis/primer-plano-dos-personas-negocios-dandose-mano-mientras-sentado-lugar-trabajo_1150-1816.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799);
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    background-size: cover;
+}
+
+h1.CientSliderTitle{
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding-top: 2em;
+
+}
+
+
+/***********/
+.ebookBg {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/eboook.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+/****estilos de pie de página*****/
+footer {
+  background-color: #00A49C;
+  display: grid;
+    grid-template-areas: 
+    "subscription subscription subscription subscription"
+    "Instagram Facebook Linkedin Email"
+    "Copyright Copyright Copyright Copyright";
+   grid-template-columns:repeat(4,1fr);
+    grid-column-gap: 1em;
+    grid-template-rows: 200px auto 100px;
+    grid-row-gap: 1em;
+    text-align: center;
+    width: 100vw;
+  }
+div.subscription{
+  grid-area: subscription;
+  padding: 10px;
+}
+div.Copyright {
+  grid-area: Copyright;
+  text-align: center;
+  margin-top: 2em;
+}
+input.transition:focus {
+   width: 200px;
+   font-size: 24px;
+}
+
+/*********************/
