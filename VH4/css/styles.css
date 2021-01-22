@@ -3,7 +3,154 @@
   padding: 0;
   font-family: Roboto;
 }
+.breadcrumb {
+  background-color: white;
+}
+.ContactPage {
+  background-image: url(https://img.freepik.com/foto-gratis/empresaria-buscando-contacto-importante-telefono_1163-4256.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799); 
+  background-size: cover; 
+  background-position: center center;
+  margin-bottom: 0px!important;
+}
 
+.timeline {
+        position: relative;
+        list-style: none;
+        padding: 1rem 0;
+        margin: 0;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        margin-left: -1px;
+        background-color: #50a1ff;
+      }
+
+      .timeline-element {
+        position: relative;
+        width: 50%;
+        padding: 1rem 0;
+        padding-right: 2.5rem;
+        text-align: right;
+      }
+
+      .timeline-element::before {
+        content: '';
+        position: absolute;
+        right: -8px;
+        top: 1.35rem;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid #50a1ff;
+        background-color: #fff;
+      }
+
+      .timeline-element:nth-child(even)::before {
+        right: auto;
+        left: -8px;
+      }
+
+      .timeline-element:nth-child(even) {
+        margin-left: 50%;
+        padding-left: 2.5rem;
+        padding-right: 0;
+        text-align: left;
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline::before {
+          left: 8px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element {
+          width: 100%;
+          text-align: left;
+          padding-left: 2.5rem;
+          padding-right: 0;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element::before {
+          top: 1.25rem;
+          left: 1px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element:nth-child(even) {
+          margin-left: 0rem;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element {
+          width: 100%;
+          text-align: left;
+          padding-left: 2.5rem;
+          padding-right: 0;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element:nth-child(even)::before {
+          left: 1px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element::before {
+          top: 1.25rem;
+        }
+      }
+a.introBtn {
+  margin-left: 2em;
+}
+.card-columns {
+  margin-top: 3em;
+}
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #50a1ff;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+.heading-dark {
+    margin: 0 6rem;
+    font-size: 3rem;
+    font-weight: 500;
+  }
  .heading {
     margin: 0 6rem;
     font-size: 3.8rem;
@@ -17,40 +164,43 @@
 .IntroImg {
   width: 100%;
 }
-.GradientLine {
-  background-size: cover;
-  height: 3px;
-  background: linear-gradient(#00A49C, #2F4858, #FAA53F);
-  margin-top:2em;
+i.social-links {
+  font-size: 3em;
+  color: #f8f9fa
 }
 .text-orange {
-  color: #FAA53F;
+  color:#FAA53F ;
+}
+.card-shadow {
+  box-shadow: 10px 10px 5px grey;
+  padding: 2em;
+  margin-top: 3em;
+  transform: translateY(-30px);
 }
 .ParallaxBg {
-  background-image: url(https://img.freepik.com/foto-gratis/puedo-manejar-tareas-multiples-foto-recortada-chica-exitosa-escribiendo-teclado-tomando-notas-mientras-mira-pantalla-computadora-estudia-nuevos-graficos-negocios-no-hay-tiempo-descansar_176420-8700.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799);
+  background-image: url(../img/wordcloud.png);
   background-size: cover;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   padding: 3em;
 }
 section.container {
   padding: 2em;
 }
 a:hover {
-  color: #FAA53F
-  font-size: 26px;
   text-decoration: none;
+  color: #50a1ff;
 }
 /***** efecto del botón*****/
 .GradientButton {
-  position: relative;
+
   cursor: pointer;
   border: none;
-  width: 300px;
+padding-right: 2em;
+padding-left: 2em;
   height: 80px;
   border-radius: 50px;
   outline: none;
@@ -59,7 +209,6 @@ a:hover {
   color: #fff;
   font-size: 24px;
   letter-spacing: 4px;
-  margin-left: 6rem;
   margin-top: 3rem;
 }
 button::before {
@@ -93,59 +242,6 @@ button:hover::before {
   }
 }
 
-/*******wave animation*********/
-
-.wave {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding-bottom: 20%;
-  background-image: url(../img/waveB.svg);
-  background-repeat: repeat-x;
-  background-size: 100%;
-  animation: wave 20s linear infinite;
-}
-.wave::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding-bottom: 20%;
-  background-image: url(../img/waveW.svg);
-  background-repeat: repeat-x;
-  background-size: 100%;
-  opacity: .2;
-  animation: wave-reverse 10s linear infinite;
-}
-.wave::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding-bottom: 20%;
-  background-image: url(../img/waveT.svg);
-  background-repeat: repeat-x;
-  background-size: 100%;
-  opacity: .8;
-  animation-delay: -4s;
-  animation: wave 15s linear infinite;
-}
-@keyframes wave {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 100vw;
-  }
-}
-@keyframes wave-reverse {
-  0% {
-    background-position: 100vw;
-  }
-  100% {
-    background-position: 0;
-  }
-}
 #LogoImg {
 	height: 120px;
 }
@@ -153,25 +249,33 @@ button:hover::before {
 ul {
   padding: 2em;
 }
-.stext-shadow {
-  text-shadow: 2px 2px white;
+
+
+section {
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
-
-
 .parallax {
   /* The image used */
-  background-image: url("../img/parallax.jpg");
+  background-image: url("https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799");
 
   /* Set a specific height */
-  height: 300px;
+  height: auto;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3em;
 
   
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 
@@ -182,9 +286,7 @@ ul {
 -------------------------------------------------- */
 
 #ClientSlider {
-    z-index: 2;
-  position: relative;
-    max-width: 900px;
+   max-width: 900px;
     margin: auto
 }
 
@@ -237,9 +339,10 @@ ul {
 }
 
 section.ClientSliderBackground{ 
-  height: 450px;
+  height: auto;
   position: relative;
   background: #FAA53F;
+  margin-bottom: 0px;
 
 }
 section.ClientSliderBackground:before {
@@ -269,12 +372,13 @@ h1.CientSliderTitle{
 
 /***********/
 .ebookBg {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  background-image: url(../img/eboook.png);
+  height: auto;
+  background-image: url(../img/waves.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
+  background-position: bottom center;
+  margin:0;
+  padding: 3em;
 }
 /****estilos de pie de página*****/
 footer {
@@ -306,3 +410,105 @@ input.transition:focus {
 }
 
 /*********************/
+.card-img {
+  width: 150px;
+}
+.meeting {
+  background-image:linear-gradient(white, #00A49C);
+  height: 50vh;
+  margin-bottom: 0px;
+}
+.animated{ 
+  position: relative;
+  background: #2F4858;
+  height: auto;
+  margin: 0px;
+  padding: 3em;
+  }
+
+.rotatingText {
+font-size: 50px;
+font-weight: 900;
+position: relative;
+left: 0.5em;
+color: #00A49C;
+}
+
+.rotatingText-adjective {
+  color: #f8f9fa;
+  left:0;
+  margin-bottom: 1em;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 1em;
+}
+
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.rotatingText-adjective:nth-of-type(4) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes rotate {
+    animation-iteration-count: infinite;
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+@keyframes rotate-last {
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  80%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* Turn off animation on mobile */
+@media only screen and (max-device-width: 1366px) {
+  .rotatingText-adjective {
+    animation: none !important;
+  }
+}
