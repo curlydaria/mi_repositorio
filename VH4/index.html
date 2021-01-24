@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta name="description" content="Soporte para pymes y emprendedores. Concentráte en hacer crecer tu negocio, nosotros nos encargamos del resto">
-  	<meta name="keywords"  content="delegar tareas, tercerizar proyectos, contratar freelance">
+  	<meta name="description" content="Gestionamos tareas y proyectos de pymes y emprendedores para colaborar en el crecimiento de su negocio">
+  	<meta name="keywords"  content="gestion de tareas, gestion de proyectos, servicios para pyme, servicios para emprendedores">
 	<title>Virtual Help - Soporte para pymes y emprendedores</title>
   	<script src="https://kit.fontawesome.com/5514c2a4f3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
@@ -30,16 +30,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Quiénes Somos</a>
+            <a class="nav-link font-weight-bold" href="nosotros.html">Quiénes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Qué hacemos</a>
+            <a class="nav-link font-weight-bold" href="servicios.html">Qué hacemos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="metodologia.html">Cómo trabajamos</a>
+            <a class="nav-link font-weight-bold" href="metodologia.html">Cómo trabajamos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link font-weight-bold" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -52,11 +52,10 @@
       <div class="col-md-6">
 
         <div class="d-flex flex-column justify-content-center align-items-center h-100">
-          <h1 class="heading text-uppercase">Enfocáte en lo importante de tu negocio</h1>
-          <h4 class="subheading font-weight-bold">Te ayudamos gestionando tus tareas y proyectos. Nos convertimos en tu aliado estratégico virtual</h4>
-          <div class="mr-auto">
-            <a href="servicios.html" class="introBtn"><button type="button" class=" GradientButton">Conocé más</button></a>
-          </div>
+          <h1 class="display-4 font-weight-bolder IntroHeading text-uppercase">Hacé foco en lo importante de tu negocio</h1>
+          <h4 class="lead font-weight-bold IntroSubheading">Te ayudamos gestionando tus tareas y proyectos. Nos convertimos en tu aliado estratégico virtual</h4>
+            <a href="servicios.html"><button type="button" class=" GradientButton">Conocé más</button></a>
+          
         </div>
 
       </div>
@@ -86,36 +85,42 @@
   
     
     <section class="container-fluid ParallaxBg">
-    <h3 class="heading-dark text-center font-weight-bold">¿En qué te ayudamos?</h3>
+    <h2 class="text-center font-weight-bold">¿En qué te ayudamos?</h2>
     <div class="card-columns">
-  <div class="card">
+  <div class="card HoverableCard">
     <div class="card-body text-center">
-      <h3 class="card-text"><i class="fas fa-tasks"></i> Gestiones administrativas</h3>
+      <a href="servicios.html#gestiones" class="h3 card-text"><i class="fas fa-tasks"></i> Gestiones administrativas</a>
     </div>
   </div>
-  <div class="card">
+  <div class="card HoverableCard">
     <div class="card-body text-center">
-      <h3 class="card-text"><i class="fas fa-palette"></i>  Diseño gráfico y web</h3>
+      <a href="servicios.html#digitalizacion" class="h3 card-text"><i class="fas fa-print"></i>  Digitalización documental</a>
+    </div>
+
+
+  </div>
+  <div class="card HoverableCard">
+    <div class="card-body text-center">
+       <a href="servicios.html#tecnologia" class="h3 card-text"><i class="fas fa-laptop-code"></i>  Programación y tecnología</a>
     </div>
   </div>
-  <div class="card">
+
+  <div class="card HoverableCard">
     <div class="card-body text-center">
-      <h3 class="card-text"><i class="fas fa-laptop-code"></i>  Programación y tecnología</h3>
+      <a href="servicios.html#marketing" class="h3 card-text"><i class="fas fa-funnel-dollar"></i>  Marketing digital y Ventas</a>
     </div>
   </div>
-  <div class="card">
+  
+    <div class="card HoverableCard">
     <div class="card-body text-center">
-      <h3 class="card-text"><i class="fas fa-funnel-dollar"></i>  Marketing digital y Ventas</h3>
+      <a href="servicios.html#atencion_cliente" class="h3 card-text"><i class="fas fa-phone-volume"></i>  Atención al cliente</a>
     </div>
   </div>
-  <div class="card">
+  <div class="card HoverableCard">
     <div class="card-body text-center">
-      <h3 class="card-text"><i class="fas fa-phone-volume"></i>  Atención al cliente</h3>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body text-center">
-      <a href="servicios.html" class="h3 card-text hvr-underline-from-left">y mucho más!  <i class="far fa-arrow-alt-circle-right"></i></a>
+      <a class="h3 card-text font-weight-bold" href="servicios.html#serviciosextra">y mucho más!  <i class="fa fa-chevron-right pl-1"></i></a>
+          
+        </a>
     </div>
   </div> 	
     </div>
@@ -137,13 +142,13 @@
          
         
           <div class="col-12">
-            <h5 class="font-weight-bold mb-3">Nuestros servicios son para vos si:</h5>
+            <h3 class="font-weight-bold mb-3">Nuestros servicios son para vos si:</h3>
             <ul>
-        <li>Pusiste mucho esfuerzo en montar el negocio pero solo logra mantenerse a flote sin alcanzar los resultados esperados</li>
-      <li>Vivís estresado y haciendote cargo de muchas cosas a la vez, a veces te sentís esclavo de tu negocio</li>
-      <li>Muchas de las actividades te resultan tediosas y aburridas</li>
-      <li>Te da miedo o no contás con lo suficiente para invertir en nuevos recursos</li>
-      <li>No sabés qué herramientas digitales son las adecuadas para tu negocio</li>
+        <li class="lead">Pusiste mucho esfuerzo en montar el negocio pero solo logra mantenerse a flote sin alcanzar los resultados esperados</li>
+      <li class="lead">Vivís estresado y haciendote cargo de muchas cosas a la vez, a veces te sentís esclavo de tu negocio</li>
+      <li class="lead">Muchas de las actividades te resultan tediosas y aburridas</li>
+      <li class="lead">Te da miedo o no contás con lo suficiente para invertir en nuevos recursos</li>
+      <li class="lead">No sabés qué herramientas digitales son las adecuadas para tu negocio</li>
     </ul>
           </div>
           
@@ -163,13 +168,13 @@
         <div class="row mb-3">
           
           <div class="col-12">
-            <h5 class="font-weight-bold mb-3">Lo que te ayudamos a lograr:</h5>
+            <h3 class="font-weight-bold mb-3">Lo que te ayudamos a lograr:</h3>
             <ul>
-      <li class="">Foco en tu negocio y tiempo para concentrarte en lo importante</li>
-      <li>Procesos automatizados</li>
-      <li>Control y visibilidad de lo que pasa en tu negocio</li>
-      <li>Ahorro en costos: No tenés que pagar aportes ni cargas sociales o licencias de empleados</li>
-      <li>Ahorro en equipamiento: No tenés que gastar en espacio físico ni equipos</li>
+      <li class="lead">Foco en tu negocio y tiempo para concentrarte en lo importante</li>
+      <li class="lead">Procesos automatizados</li>
+      <li class="lead">Control y visibilidad de lo que pasa en tu negocio</li>
+      <li class="lead">Ahorro en costos: No tenés que pagar aportes ni cargas sociales o licencias de empleados</li>
+      <li class="lead">Ahorro en equipamiento: No tenés que gastar en espacio físico ni equipos</li>
     </ul>
           </div>
         
@@ -181,24 +186,24 @@
   </section>
 
  <section class="ClientSliderBackground">
-    <h1 class="blue CientSliderTitle">Qué dicen nuestros clientes</h1>
+    <h1 class="blue CientSliderTitle text-center">Qué dicen nuestros clientes</h1>
     <div id="ClientSlider" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="carousel-caption">
+          <div class="carousel-caption text-center h6 font-italic">
             <p>Antes estaba abrumada por la cantidad de tareas que generaba mi empresa. Trabajar con Virtual Help supuso un descanso y un alivio, ya que por fin toda la parte técnica e informática de mi negocio estaba bien gestionada. Me aportaron mucho valor y ya no me siento tan sola en el proceso.</p> 
             <div id="name-caption">Juana A.</div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="carousel-caption">
-            <p>Capacidad de trabajo, empatía, predisposición plena para resolver cualquier contratiempo. Disciplina y eficacia en la resolución de todo tipo de tareas.Control y enorme habilidad en el manejo de cualquier tipo de aplicación informática</p> 
+          <div class="carousel-caption h6 text-center font-italic">
+            <p>Capacidad de trabajo, empatía, predisposición plena para resolver cualquier contratiempo. Disciplina y eficacia en la resolución de todo tipo de tareas. Control y enorme habilidad en el manejo de cualquier tipo de aplicación informática</p> 
             <div id="name-caption">Pedro C.</div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="carousel-caption">
-            <p>Ponen toda su implicación y rapidez en el trabajo, cosas que yo valoro enormemente. A nivel personal te das cuenta en seguida de con que clase de personas estás trabajando. Tienen una clara vocación por ayudar a los demás. En cualquiera de las fases que esté tu negocio, solo puedo recomendarte que valores delegar tareas y verás los buenos resultados que consigues.</p> 
+          <div class="carousel-caption text-center h6 font-italic">
+            <p>Ponen toda su dedicación y rapidez en el trabajo, cosas que yo valoro enormemente. A nivel personal te das cuenta en seguida de con qué clase de personas estás trabajando. Tienen una clara vocación por ayudar a los demás. En cualquiera de las fases que esté tu negocio.</p> 
             <div id="name-caption">Carla P.</div>
           </div>
         </div>
@@ -218,7 +223,7 @@
     <div class="col-sm-6">
 
       <div class="card card-shadow">
-  <div class="display-4 font-italic text-center text-orange">"Guía definitiva: 5 consejos para delegar eficientemente"</div>
+  <h1 class="font-italic text-center text-orange">"Guía definitiva: 5 consejos para delegar eficientemente"</h1>
   <div class="card-body"><form action="/action_page.php">
     <div class="form-outline mb-4">
   <input type="email" class="form-control" placeholder="Tu email" id="email"></div><div class="form-outline mb-4"><input type="text" class="form-control" placeholder="Tu nombre" id="name"></div>
@@ -239,8 +244,8 @@
     <div class="subscription">
       <h3>¿Querés recibir novedades por mail?</h3>
       <form action="">
-        <input class="transition" type="email" name="email" placeholder="Email">
-          <a class="btn btn-secondary" href="#">Suscribite</a>
+        <input class="transition" type="email" name="email" placeholder="Tu email">
+          <a class="simpleButton" href="#">Suscribite</a>
       </form>
     </div>
     <!--links de redes sociales-->
