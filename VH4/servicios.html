@@ -10,6 +10,7 @@
   	<script src="https://kit.fontawesome.com/5514c2a4f3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
   	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!---- AOS Animation--->
   	<link rel="stylesheet" type="text/css" href="css/styles.css">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,16 +31,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Quiénes Somos</a>
+            <a class="nav-link font-weight-bold" href="nosotros.html">Quiénes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Qué hacemos</a>
+            <a class="nav-link font-weight-bold" href="servicios.html">Qué hacemos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="metodologia.html">Cómo trabajamos</a>
+            <a class="nav-link font-weight-bold" href="metodologia.html">Cómo trabajamos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link font-weight-bold" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -54,13 +55,18 @@
     <h3 class="font-weight-bold text-center dark-grey-text pb-2">Nuestros Servicios</h3>
     <hr>
     <p class="lead text-center text-muted pt-2 mb-5">Estamos listas para colaborar en el crecimiento de tu negocio</p>
+     <div class="row">
 
-   <div class="row text-center">
-      <div class="col-lg-4 col-md-6 mb-5">
-        <h4 id="gestiones" class="text-blue font-weight-bold mb-3">
-          <i class="fas fa-tasks"></i> Gestiones administrativas
-        </h4>
-        <dl>
+        <div data-aos="fade-right" class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img class="servicesImg" src="https://img.freepik.com/foto-gratis/negocios-que-controla-documentos-mesa_1262-2231.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799">
+          <div class="services">
+      <h3 id="gestiones" class="text-white font-weight-bold"><i class="fas fa-tasks"></i> Gestiones administrativas</h3>
+    </div>
+    
+
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 p-3 my-3 border-left"> <dl>
          <dt>Seguimiento de pagos y cobranzas</dt>
          <dt>Carga de facturas</dt>
          <dd>Sabemos que son gestiones muy tediosas pero a la vez, es una de las áreas que requieren más atención ya que permiten que tu negocio continúe operando</dd>
@@ -71,25 +77,45 @@
           <dt>Búsqueda de inforación y datos online</dt>
          
        </dl>
+
+          <a class="font-weight-bold" href="contacto.html" >Más información<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+
       </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <h4 id="digitalizacion" class="text-orange font-weight-bold mb-3">
-          <i class="fas fa-print"></i>  Digitalización documental
-        </h4>
-        <dl>
+  
+   <div class="row">
+
+        <div data-aos="fade-right" class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center mt-3">
+          <img class="servicesImg" src="https://img.freepik.com/foto-gratis/trabajo-secretaria_1098-15953.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799">
+          <div class="services">
+          <h3 id="digitalizacion" class="text-white font-weight-bold"><i class="fas fa-print"></i>  Digitalización de documentos</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 p-3 my-3 border-left"> 
+          <dl>
         <dt>Organización de archivo digital</dt>
         <dt>Escaneo de documentos</dt>
          <dd>Escaneamos tus documentos y los organizamos digitalmente en la nube para optimizar tiempos de búsqueda y puedas acceder a la información que necesitás desde cualquier lugar y en cualquier momento</dd>
           <dt>Alta de respositorio documental en la nube</dt>
          
        </dl>
+       <a class="font-weight-bold" href="contacto.html" >Más información<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
 
       </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <h4 id="tecnologia" class="text-torquoise font-weight-bold mb-3">
-          <i class="fas fa-laptop-code"></i>  Programación y tecnología
-        </h4>
-        <dl>
+
+         <div class="row">
+
+        <div data-aos="fade-right" class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center mt-3">
+          <img class="servicesImg" src="https://img.freepik.com/foto-gratis/coding-man_1098-18084.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799">
+          <div class="services">
+          <h3 id="tecnologia" class="text-white font-weight-bold"><i class="fas fa-laptop-code"></i>  Programación y tecnología</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 p-3 my-3 border-left"> 
+          <dl>
          <dt>Desarrollo web y de ecommerce</dt>
          <dd>Creamos tu página totalmente personalizada de acuerdo a tus necesidades. No importa si es ua web institucional o una tienda en línea</dd>
           <dt>SEO Optimización en buscadores</dt>
@@ -103,12 +129,23 @@
          <dd>Relevamos tu necesidad y buscamos la herramienta ideal en el mercado para tus requerimientos</dd>
           
        </dl> 
+
+       <a class="font-weight-bold" href="contacto.html" >Más información<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+
       </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <h4 id="marketing" class="text-torquoise font-weight-bold mb-3">
-          <i class="fas fa-funnel-dollar"></i>  Marketing digital y Ventas
-        </h4>
-       <dl>
+
+     <div class="row">
+
+        <div data-aos="fade-right" class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center mt-3">
+          <img class="servicesImg" src="https://img.freepik.com/foto-gratis/portatil-libreta-iconos-aplicaciones_1134-62.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799">
+          <div class="services">
+          <h3 id="marketing" class="text-white font-weight-bold"><i class="fas fa-funnel-dollar"></i>  Marketing digital</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 p-3 my-3 border-left"> 
+          <dl>
          <dt>Calendario de contenido</dt>
          <dd>Dejá atrás la angustia posteadora, siempre vas a saber qué postear y cuándo en las redes sociales</dd>
           <dt>Métricas y analítica</dt>
@@ -117,37 +154,67 @@
          <dd>Creamos y gestionamos campañas de anuncios en Google y Facebook para aumentar tu alcance y tráfico en línea</dd>
           <dt>Email marketing</dt>
          <dd>Creamos campañas por correo electrónico para que puedas llegar con contenido de valioso a aquellos que ya mostraron interés en tu producto/servicio</dd>
-          <dt>Gestión comercial</dt>
-         <dd>Creación y gestión de base de datos de clientes y prospectos. Te ayudamos con herramientas digitales sencillas y a tu alcance y manteniendo todo al día, incluso haciendo un seguimiento de las cotizaciones enviadas</dd>
        </dl>      
-     </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <h4 id="atencion_cliente" class="text-blue font-weight-bold mb-3">
-          <i class="fas fa-phone-volume"></i>  Atención al cliente
-        </h4>
-        <dl>
+
+       <a class="font-weight-bold" href="contacto.html" >Más información<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+
+        <div data-aos="fade-right" class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center mt-3">
+          <img class="servicesImg" src="https://img.freepik.com/foto-gratis/apoyo_186202-61.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799">
+          <div class="services">
+          <h3 id="atencion_cliente" class="text-white font-weight-bold"><i class="fas fa-phone-volume"></i>  Atención al cliente</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 p-3 my-3 border-left"> 
+          <dl>
   <dt>Gestión de email y agenda</dt>
   <dd>Filtrado y organización de correos, protocolo de respuesta</dd>
   <dt>Atención de chat</dt>
   <dd>Respuestas a mensajes recibidos por Whatsapp Business y chatbots</dd>
   <dt>Recepcionista</dt>
   <dd>Recibimos correo y encomiendas por vos</dd>
-</dl>
+</dl>      
+
+       <a class="font-weight-bold" href="contacto.html" >Más información<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+
       </div>
-      <div class="col-lg-4 col-md-6 mb-5">
-        <h4 id="serviciosextra" class="text-orange font-weight-bold mb-3">
-          <i class="fa fa-chevron-right pl-1"></i> Otros servicios
-        </h4>
-        <ul class="list-unstyled">
+
+      <div class="row">
+
+        <div data-aos="fade-right" class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center mt-3">
+          <img class="servicesImg" src="https://img.freepik.com/foto-gratis/mano-que-sostiene-lampara-envia-otra-mano_1150-19553.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799">
+          <div class="services">
+
+          <h3 id="serviciosextra" class="text-white font-weight-bold"><i class="fa fa-chevron-right pl-1"></i> Otros servicios</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 p-3 my-3 border-left"> 
+          <ul class="list-unstyled">
+            <li>Creación y gestión de base de datos de clientes y prospectos</li>
           <li>Soporte a conferencistas</li>
           <li>Diseño de logos, edición de videos, ilustraciones, etc</li>
           <li>Traducciones</li>
           <li>Edición de textos, transcripción de documentos o notas</li>
           <li>Organización de webinars y eventos</li>
-          <li><a class="btn simpleButton" href="contacto.html">Contactános por más servicios</a></li>
-        </ul>
+        </ul> 
+
+       <a class="font-weight-bold" href="contacto.html" >Consultar por otros servicios<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+
       </div>
-    </div>
+      
+      
+     
       
     
       
@@ -155,25 +222,27 @@
 
 <!--acá empieza el pie de página-->
   <footer>
-    <div class="subscription">
-      <h3>¿Querés recibir novedades por mail?</h3>
-      <form action="">
-        <input class="transition" type="email" name="email" placeholder="Email">
-          <a class="btn" href="#">Suscribirme</a>
-      </form>
-    </div>
-    <!--links de redes sociales-->
-    <a href="https://www.instagram.com/virtualhelpok/"><i class=" fab fa-instagram-square"></i></a>
-    <a href="#"><i class=" fab fa-facebook-square"></i></a>
-    <a href="#"><i class=" fab fa-linkedin"></i></a>
-    <a href="mailto:sol@virtualhelp.com.ar"><i class=" fas fa-envelope-open"></i></a>
+    <div class="titleSocial"><h2 class="mt-3">¡Seguínos en las redes sociales!</h2></div>
+
+    <a href="https://www.instagram.com/virtualhelpok/"><i class="social-links fab fa-instagram-square"></i></a>
+    <a href="#"><i class="social-links fab fa-facebook-square"></i></a>
+    <a href="#"><i class="social-links fab fa-linkedin"></i></a>
+    <a href="mailto:sol@virtualhelp.com.ar"><i class=" social-links fas fa-envelope-open"></i></a></div>
     <div class="Copyright">
       <p>Desarrollado por Virtual Help. Todos los derechos reservados.</p>
-    </div>
+
   </footer>
   <!--scripts-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!---- script and initialize AOS--->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+  <script>
+    AOS.init();
+  </script>
+  <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7478895.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>

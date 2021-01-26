@@ -10,6 +10,7 @@
   	<script src="https://kit.fontawesome.com/5514c2a4f3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
   	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!---- AOS Animation--->
   	<link rel="stylesheet" type="text/css" href="css/styles.css">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,16 +31,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Quiénes Somos</a>
+            <a class="nav-link font-weight-bold" href="nosotros.html">Quiénes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Qué hacemos</a>
+            <a class="nav-link font-weight-bold" href="servicios.html">Qué hacemos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="metodologia.html">Cómo trabajamos</a>
+            <a class="nav-link font-weight-bold" href="metodologia.html">Cómo trabajamos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link font-weight-bold" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -135,7 +136,7 @@ Creamos procesos que te permitirán optimizar tu tiempo y actividades</p>
 
           <div class="col-xl-10 col-md-11 col-10">
             <h5 class="font-weight-bold mb-3">Hacemos realidad tus proyectos</h5>
-            <p class="mb-0">Contamos con un ecosistema de expertos talentosos para llevar a cabo tus proyectos</p>
+            <p class="mb-3">Contamos con un ecosistema de expertos talentosos para llevar a cabo tus proyectos</p>
           </div>
      </div>
 
@@ -153,26 +154,27 @@ Creamos procesos que te permitirán optimizar tu tiempo y actividades</p>
 
   </section>
 
-    <section>
+    <section class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
-
+      <div class="col-lg-8 mx-auto mt-5">
+<h3 class="text-center pb-2">¿Por dónde empezamos?</h3>
         <ol class="timeline">
-          <li class="timeline-element">
+          <li data-aos="fade-up-right" class="timeline-element">
             <h5 class="font-weight-bold dark-grey-text mb-3">Primera reunión</h5>
             <p class="text-muted">Agendamos una meeting por zoom breve y sin compromiso. Servirá para conocernos y relevar tus necesidades e identificar las tareas o procesos que más dificultades te provocan</p>
+            <a class="font-weight-bold" href="https://meetings.hubspot.com/sol18" >Agendar reunión<i class="fas fa-angle-right ml-2"></i></a>
           </li>
 
-          <li class="timeline-element">
+          <li data-aos="fade-up-left" class="timeline-element">
             <h5 class="font-weight-bold dark-grey-text mb-3">Propuesta personalizada</h5>
-            <p class="text-muted">Enseguida inventariamos tus tareas, evaluamos qué metodología te resultará más eficiente y armamos un plan personalizado de soluciones con distintas opciones de alcance (comenzando por "los frutos bajos del árbol") para que elijas el que se ajusta a tu presupuesto </p>
+            <p class="text-muted">Enseguida inventariamos tus tareas, evaluamos qué metodología te resultará más eficiente y armamos un plan personalizado de soluciones con distintas opciones de alcance en función de tus expectativas (comenzando por "los frutos bajos del árbol") para que elijas el que se ajusta a tu presupuesto </p>
           </li>
 
           
 
-          <li class="timeline-element">
+          <li data-aos="fade-up-right" class="timeline-element">
             <h5 class="font-weight-bold dark-grey-text mb-3">Sinergia</h5>
-            <p class="text-muted">Una vez que nos hayas confirmado la propuesta, empezamos a trabajar juntos. Nos valemos de  y colaborar en el crecimiento de tu negocio!</p>
+            <p class="text-muted">Una vez que nos hayas confirmado la propuesta, empezamos a trabajar juntos. Contarás con nuestro acompañamiento constante y nuestro soporte día a día. Queremos colaborar en el crecimiento de tu negocio!</p>
           </li>
         </ol>
 
@@ -181,46 +183,53 @@ Creamos procesos que te permitirán optimizar tu tiempo y actividades</p>
     
   </section>
    
-<section class="container-fluid ebookBg">
+<section class="container-fluid ebookBg"><!----seccion descarga ebook--->
   <div class="row">
-          <h1 class=" text-center font-weight-bolder">¡No te ahogues en un mar de pendientes!</h1>
+    <h1 class=" text-center font-weight-bolder">¡No te ahogues en un mar de pendientes!</h1>
     <div class="col-sm-6">
-
-      <div class="card card-shadow">
-  <div class="display-4 font-italic text-center text-orange">"Guía definitiva: 5 consejos para delegar eficientemente"</div>
-  <div class="card-body"><form action="/action_page.php">
-    <div class="form-outline mb-4">
-  <input type="email" class="form-control" placeholder="Tu email" id="email"></div><div class="form-outline mb-4"><input type="text" class="form-control" placeholder="Tu nombre" id="name"></div>
-  <button type="submit" class="GradientButton">Descargar<i class="fas fa-download"></i></button>
-  </div>
-</form>
-  </div></div>
-</div>
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="card card-shadow">
+      <h1 class="font-italic text-center OrangeText">"Guía definitiva: 5 consejos para delegar eficientemente"</h1>
+      <div class="card-body">
+        <form action="/action_page.php"><!---form de descarga ebook--->
+          <div class="form-outline mb-4">
+            <input type="text" class="form-control" placeholder="Tu nombre" id="name">
+          </div>
+          <div class="form-outline mb-4">
+            <input type="email" class="form-control" placeholder="Tu email" id="email">
+          </div>
+          <button type="submit" class="GradientButton">Descargar<i class="fas fa-download"></i></button>
+        </div>
+      </form>
     </div>
   </div>
+</div>
+</div>
 </section>
 
 <!--acá empieza el pie de página-->
   <footer>
-    <div class="subscription">
-      <h3>¿Querés recibir novedades por mail?</h3>
-      <form action="">
-        <input class="transition" type="email" name="email" placeholder="Email">
-          <a class="simpleButton" href="#">Suscribirme</a>
-      </form>
-    </div>
-    <!--links de redes sociales-->
-    <a href="https://www.instagram.com/virtualhelpok/"><i class=" fab fa-instagram-square"></i></a>
-    <a href="#"><i class=" fab fa-facebook-square"></i></a>
-    <a href="#"><i class=" fab fa-linkedin"></i></a>
-    <a href="mailto:sol@virtualhelp.com.ar"><i class=" fas fa-envelope-open"></i></a>
+    <div class="titleSocial"><h2 class="mt-3">¡Seguínos en las redes sociales!</h2></div>
+
+    <a href="https://www.instagram.com/virtualhelpok/"><i class="social-links fab fa-instagram-square"></i></a>
+    <a href="#"><i class="social-links fab fa-facebook-square"></i></a>
+    <a href="#"><i class="social-links fab fa-linkedin"></i></a>
+    <a href="mailto:sol@virtualhelp.com.ar"><i class=" social-links fas fa-envelope-open"></i></a></div>
     <div class="Copyright">
       <p>Desarrollado por Virtual Help. Todos los derechos reservados.</p>
-    </div>
+
   </footer>
   <!--scripts-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!---- script and initialize AOS--->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+  <script>
+    AOS.init();
+  </script>
+  <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7478895.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>

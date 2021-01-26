@@ -4,6 +4,35 @@
   font-family: Roboto;
 }
 
+
+ .IntroHeading {
+    margin: 0 6rem;
+    color: #00A49C;
+  }
+  .IntroSubheading {
+    margin: 2.5rem 6rem;
+    color: #2F4858;
+  }
+.IntroImg {
+  width: 100%;
+}
+
+.services {
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: #2F4858; /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 80%; 
+  padding: 50px;
+}
+.servicesImg {
+  width: 100%;
+}
+.card {
+  border-radius: 50px;
+}
+
+
 hr {
   height: 5px;
   border: none;
@@ -123,59 +152,13 @@ hr {
 .card-columns {
   margin-top: 3em;
 }
-.hvr-underline-from-left {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-left:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #50a1ff;
-  height: 4px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-  right: 0;
-}
 
- .IntroHeading {
-    margin: 0 6rem;
-    color: #00A49C;
-  }
-  .IntroSubheading {
-    margin: 2.5rem 6rem;
-    color: #2F4858;
-  }
-.IntroImg {
-  width: 100%;
-}
+
 i.social-links {
   font-size: 3em;
   color: #f8f9fa
 }
-.text-orange {
-  color:#FAA53F ;
-}
-.text-blue {
-  color:#50a1ff ;
-}
-.text-torquoise {
-  color:#00A49C ;
-}
+
 .card-shadow {
   box-shadow: 10px 10px 5px grey;
   padding: 2em;
@@ -192,9 +175,7 @@ i.social-links {
   background-size: cover;
   padding: 3em;
 }
-section.container {
-  padding: 2em;
-}
+
 a {
   color: black;
 }
@@ -288,15 +269,10 @@ button:hover::before {
 	height: 120px;
 }
 
-ul {
-  padding: 2em;
-}
 
 
-section {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
+
+
 .parallax {
   /* The image used */
   background-image: url("https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799");
@@ -416,7 +392,7 @@ footer {
   background-color: #00A49C;
   display: grid;
     grid-template-areas: 
-    "subscription subscription subscription subscription"
+    "titleSocial titleSocial titleSocial titleSocial"
     "Instagram Facebook Linkedin Email"
     "Copyright Copyright Copyright Copyright";
    grid-template-columns:repeat(4,1fr);
@@ -426,9 +402,9 @@ footer {
     text-align: center;
     width: 100vw;
   }
-div.subscription{
-  grid-area: subscription;
-  padding: 10px;
+div.titleSocial{
+  grid-area: titleSocial;
+  color: white;
 }
 div.Copyright {
   grid-area: Copyright;
@@ -456,90 +432,3 @@ input.transition:focus {
   margin: 0px;
   padding: 3em;
   }
-
-.rotatingText {
-font-size: 50px;
-font-weight: 900;
-position: relative;
-left: 0.5em;
-color: #00A49C;
-}
-
-.rotatingText-adjective {
-  color: #f8f9fa;
-  left:0;
-  margin-bottom: 1em;
-  opacity: 0;
-  position: absolute;
-  text-align: left;
-  top: 0;
-  font-size: 50px;
-  font-weight: 700;
-  padding: 1em;
-}
-
-.rotatingText-adjective:nth-of-type(1) {
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-}
-
-.rotatingText-adjective:nth-of-type(2) {
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-delay: 3.5s;
-}
-
-.rotatingText-adjective:nth-of-type(3) {
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-}
-.rotatingText-adjective:nth-of-type(4) {
-  animation-name: rotate-last;
-  animation-duration: 1.5s;
-  animation-delay: 7s;
-  animation-fill-mode: forwards;
-}
-
-
-@keyframes rotate {
-    animation-iteration-count: infinite;
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
-  }
-  
-  20%, 80% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-  20%, 80% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-  
-  100% {
-    opacity: 0;
-    transform: translate3d(0, -25px, 0);
-  }
-}
-@keyframes rotate-last {
-
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
-  }
-  
-  80%, 100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-/* Turn off animation on mobile */
-@media only screen and (max-device-width: 1366px) {
-  .rotatingText-adjective {
-    animation: none !important;
-  }
-}
