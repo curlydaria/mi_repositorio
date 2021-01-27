@@ -1,0 +1,57 @@
+
+.GradientButton {
+  position:relative;
+    cursor: pointer;
+    border: none;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    height: 80px;
+    border-radius: 50px;
+    outline: none;
+    background: linear-gradient(90deg, $mytorquoise, $myblue, $myorange, grey);
+    background-size: 400%;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-top: 1rem;
+    &::before {/***** efecto del botón*****/
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(90deg, $mytorquoise, $myblue, $myorange, grey);
+        background-size: 400%;
+        border-radius: 50px;
+        opacity: 0;
+        transition: .8s;
+      }
+      &:hover {
+        animation: animate 10s linear infinite;
+        &::before {
+            filter: blur(25px);
+            opacity: .8;
+            animation: animate 10s linear infinite;
+          }
+      }
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
+
+  .simpleButton {
+    border-radius: 50px;
+    background-color: $myorange;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+  
+  }

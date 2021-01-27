@@ -69,7 +69,7 @@
   </section>
   </header>
  <!------fin de header--------->
- <section class="container-fluid ParallaxBg">
+ <section id="servicesList" class="container-fluid">
   <h2 class="text-center font-weight-bold">¿En qué te ayudamos?</h2>
   <div class="card-columns">
     <div class="card HoverableCard">
@@ -146,26 +146,27 @@
         </div>
       </section>
 
- <section class="ClientSliderBackground">
-    <h1 class="blue CientSliderTitle text-center">Qué dicen nuestros clientes</h1>
+ <section class="ClientSliderBackground"> <!----carousel---->
+    <h1 class="text-center">Qué dicen nuestros clientes</h1>
     <div id="ClientSlider" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="carousel-caption text-center h6 font-italic">
-            <p>Antes estaba abrumada por la cantidad de tareas que generaba mi empresa. Trabajar con Virtual Help supuso un descanso y un alivio, ya que por fin toda la parte técnica e informática de mi negocio estaba bien gestionada. Me aportaron mucho valor y ya no me siento tan sola en el proceso.</p> 
-            <div id="name-caption">Juana A.</div>
+          <div class="carousel-caption">
+            <p class="text-center h6">Antes estaba abrumada por la cantidad de tareas que generaba mi empresa. Trabajar con Virtual Help supuso un descanso y un alivio, ya que por fin toda la parte técnica e informática de mi negocio estaba bien gestionada. Me aportaron mucho valor y ya no me siento tan sola en el proceso.</p> 
+            <p class="font-italic">Juana A.</p>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <p class="h6 text-center">Capacidad de trabajo, empatía, predisposición plena para resolver cualquier contratiempo. Disciplina y eficacia en la resolución de todo tipo de tareas. Control y enorme habilidad en el manejo de cualquier tipo de aplicación informática</p> 
+            <p class="font-italic">Pedro C.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="carousel-caption h6 text-center font-italic">
-            <p>Capacidad de trabajo, empatía, predisposición plena para resolver cualquier contratiempo. Disciplina y eficacia en la resolución de todo tipo de tareas. Control y enorme habilidad en el manejo de cualquier tipo de aplicación informática</p> 
-            <div id="name-caption">Pedro C.</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="carousel-caption text-center h6 font-italic">
-            <p>Ponen toda su dedicación y rapidez en el trabajo, cosas que yo valoro enormemente. A nivel personal te das cuenta en seguida de con qué clase de personas estás trabajando. Tienen una clara vocación por ayudar a los demás. En cualquiera de las fases que esté tu negocio.</p> 
-            <div id="name-caption">Carla P.</div>
+          <div class="carousel-caption">
+            <p class="h6 text-center">Ponen toda su dedicación y rapidez en el trabajo, cosas que yo valoro enormemente. A nivel personal te das cuenta en seguida de con qué clase de personas estás trabajando. Tienen una clara vocación por ayudar a los demás. En cualquiera de las fases que esté tu negocio.</p> 
+            <p class="font-italic">Carla P.</p>
           </div>
         </div>
       </div> 
@@ -183,8 +184,8 @@
     <h1 class=" text-center font-weight-bolder">¡No te ahogues en un mar de pendientes!</h1>
     <div class="col-sm-6">
       <div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" class="card card-shadow">
-      <h1 class="font-italic text-center OrangeText">"Guía definitiva: 5 consejos para delegar"</h1>
+     data-aos-anchor-placement="top-bottom" class="card cardShadow">
+      <h1 class="font-italic text-center mt-3 OrangeText">"Guía definitiva: 5 consejos para delegar"</h1>
       <div class="card-body">
         <form action="/action_page.php"><!---form de descarga ebook--->
           <div class="form-outline mb-4">

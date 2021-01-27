@@ -1,0 +1,194 @@
+/*Import*/
+@import "colores";
+@import "botones";
+@import "carousel";
+@import "timeline";
+/******************************/
+@mixin icon ($n) {
+    font-size: 3em;
+    margin-top: 2em;
+    color: $n;
+  }
+
+@mixin parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em;
+    height: auto;
+    }
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    @mixin parallax {
+      background-attachment: scroll;
+    }
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+  }
+  
+nav{
+    #LogoImg {
+    height: 120px;
+}
+.breadcrumb {
+    background-color: white;
+  }
+}
+section.container{
+    padding:2em;
+}
+div{ /*seccion intro*/
+    h1.IntroHeading {
+        margin: 0 6rem;
+        color:$mytorquoise;
+      }
+    h4.IntroSubheading {
+        margin: 2.5rem 6rem;
+        color:$myblue;
+      }  
+}
+img.IntroImg {
+    width: 100%;
+  }
+
+
+a {
+    color: black;
+    &:hover {
+        text-decoration: none;
+        color:$myblue;
+      }
+  }
+
+
+div.card {
+    border-radius: 50px;
+  }
+
+
+
+#servicesList {
+background-image: url(../img/wordcloud.png);
+@include parallax;
+div.HoverableCard:hover {
+    box-shadow: 10px 10px 5px grey;
+    }
+}
+  
+
+  .ebookBg {
+    height: auto;
+    background-image: url(../img/waves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin:0;
+    padding: 3em;
+  }
+  .cardShadow { /*sombra de descarga de ebook*/
+    box-shadow: 10px 10px 5px grey;
+    padding: 2em;
+    margin-top: 3em;
+    transform: translateY(-30px);
+  }
+
+
+    hr {
+        height: 5px;
+        border: none;
+        border-radius: 50px;
+        background-image: linear-gradient(to right,$mytorquoise ,$myblue);
+    }
+  
+  /* fotos de servicios en pagina services*/
+  .services {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the top*/
+    background: $myblue; /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    width: 80%; 
+    padding: 50px;
+    }
+  .servicesImg {
+        width: 100%;
+    }
+/*********************/
+  
+  #contactPage {
+    background-image: url(https://img.freepik.com/foto-gratis/empresaria-buscando-contacto-importante-telefono_1163-4256.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799); 
+    background-size: cover; 
+    background-position: center center;
+  }
+  
+  .card-img {
+    width: 150px;
+  }
+
+  .blueBg{ 
+    background: $myblue;
+    height: auto;
+    padding: 3em;
+    }
+
+  .OrangeText {
+    color:$myorange;
+  }
+
+  /***iconos de color en la pagina nosotras****/
+  .BlueIcon {
+    @include icon ($myblue)
+  }
+  .OrangeIcon {
+    @include icon ($myorange)
+  }
+  .TorquoiseIcon {
+    @include icon ($mytorquoise)
+  }
+  .LightblueIcon {
+    @include icon ($mylightblue);
+  }
+ /*************/
+  #team {
+  background-image: url("https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799");
+  @include parallax;
+  }
+  
+  
+  
+  
+  /****estilos de pie de página*****/
+  footer {
+    background-color: $mytorquoise;
+    display: grid;
+    grid-template-areas: 
+      "titleSocial titleSocial titleSocial titleSocial"
+      "Instagram Facebook Linkedin Email"
+      "Copyright Copyright Copyright Copyright";
+    grid-template-columns:repeat(4,1fr);
+    grid-column-gap: 1em;
+    grid-template-rows: 100px auto 100px;
+    grid-row-gap: 1em;
+    text-align: center;
+    width: 100vw;
+    div.titleSocial{
+        grid-area: titleSocial;
+        color: white;
+      }
+    i.social-links {
+        font-size: 3em;
+        color: white;
+      }
+    div.Copyright {
+        grid-area: Copyright;
+        text-align: center;
+        margin-top: 2em;
+      }
+  }
+  
+
+  

@@ -1,225 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
-}
-
-
- .IntroHeading {
-    margin: 0 6rem;
-    color: #00A49C;
-  }
-  .IntroSubheading {
-    margin: 2.5rem 6rem;
-    color: #2F4858;
-  }
-.IntroImg {
-  width: 100%;
-}
-
-.services {
-  position: absolute; /* Position the background text */
-  top: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: #2F4858; /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  width: 80%; 
-  padding: 50px;
-}
-.servicesImg {
-  width: 100%;
-}
-.card {
-  border-radius: 50px;
-}
-
-
-hr {
-  height: 5px;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(to right,#00A49C ,#2F4858);
-}
-.breadcrumb {
-  background-color: white;
-}
-.ContactPage {
-  background-image: url(https://img.freepik.com/foto-gratis/empresaria-buscando-contacto-importante-telefono_1163-4256.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799); 
-  background-size: cover; 
-  background-position: center center;
-  margin-bottom: 0px!important;
-}
-
-.timeline {
-        position: relative;
-        list-style: none;
-        padding: 1rem 0;
-        margin: 0;
-      }
-
-      .timeline::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        margin-left: -1px;
-        background-color: #50a1ff;
-      }
-
-      .timeline-element {
-        position: relative;
-        width: 50%;
-        padding: 1rem 0;
-        padding-right: 2.5rem;
-        text-align: right;
-      }
-
-      .timeline-element::before {
-        content: '';
-        position: absolute;
-        right: -8px;
-        top: 1.35rem;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        border: 2px solid #50a1ff;
-        background-color: #fff;
-      }
-
-      .timeline-element:nth-child(even)::before {
-        right: auto;
-        left: -8px;
-      }
-
-      .timeline-element:nth-child(even) {
-        margin-left: 50%;
-        padding-left: 2.5rem;
-        padding-right: 0;
-        text-align: left;
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline::before {
-          left: 8px;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element {
-          width: 100%;
-          text-align: left;
-          padding-left: 2.5rem;
-          padding-right: 0;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element::before {
-          top: 1.25rem;
-          left: 1px;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element:nth-child(even) {
-          margin-left: 0rem;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element {
-          width: 100%;
-          text-align: left;
-          padding-left: 2.5rem;
-          padding-right: 0;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element:nth-child(even)::before {
-          left: 1px;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element::before {
-          top: 1.25rem;
-        }
-      }
-
-.card-columns {
-  margin-top: 3em;
-}
-
-
-i.social-links {
-  font-size: 3em;
-  color: #f8f9fa
-}
-
-.card-shadow {
-  box-shadow: 10px 10px 5px grey;
-  padding: 2em;
-  margin-top: 3em;
-  transform: translateY(-30px);
-}
-.ParallaxBg {
-  background-image: url(../img/wordcloud.png);
-  background-size: cover;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3em;
-}
-
-a {
-  color: black;
-}
-a:hover {
-  text-decoration: none;
-  color:#2F4858;
-}
-.HoverableCard:hover {
-  box-shadow: 10px 10px 5px grey;
-}
-.OrangeText {
-  color: #FAA53F;
-}
-.BlueIcon {
-  color: #2F4858;
-  font-size: 3em;
-  margin-top: 2em;
-}
-.OrangeIcon {
-  color: #FAA53F;
-  font-size: 3em;
-  margin-top: 2em;
-}
-.TorquoiseIcon {
-  color: #00A49C;
-  font-size: 3em;
-  margin-top: 2em;
-}
-.LightblueIcon {
-  color: #50a1ff;
-  font-size: 3em;
-  margin-top: 2em;
-}
-.simpleButton {
-  border-radius: 50px;
-  background-color: #FAA53F;
-  color: white;
-  padding: 1em;
-  margin-top: 1em;
-
-}
-/***** efecto del botón*****/
+@charset "UTF-8";
+/*Import*/
 .GradientButton {
-
+  position: relative;
   cursor: pointer;
   border: none;
   padding-right: 1.5em;
@@ -227,133 +9,61 @@ a:hover {
   height: 80px;
   border-radius: 50px;
   outline: none;
-  background: linear-gradient(90deg, #00A49C, #2F4858, #FAA53F, #6c757d);
+  background: linear-gradient(90deg, #00A49C, #2F4858, #FAA53F, grey);
   background-size: 400%;
   color: #fff;
   font-size: 24px;
   letter-spacing: 4px;
-  margin-top: 1rem;
-}
-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: linear-gradient(90deg, #00A49C, #2F4858, #FAA53F, #6c757d));
-  background-size: 400%;
-  border-radius: 50px;
-  opacity: 0;
-  transition: .5s;
-}
-button:hover {
-  animation: animate 10s linear infinite;
-}
-button:hover::before {
-  filter: blur(25px);
-  opacity: .8;
-  animation: animate 10s linear infinite;
-}
+  margin-top: 1rem; }
+  .GradientButton::before {
+    /***** efecto del botón*****/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, #00A49C, #2F4858, #FAA53F, grey);
+    background-size: 400%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: .8s; }
+  .GradientButton:hover {
+    animation: animate 10s linear infinite; }
+    .GradientButton:hover::before {
+      filter: blur(25px);
+      opacity: .8;
+      animation: animate 10s linear infinite; }
+
 @keyframes animate {
   0% {
-    background-position: 0%;
-  }
+    background-position: 0%; }
   100% {
-    background-position: 400%;
-  }
-}
+    background-position: 400%; } }
 
-#LogoImg {
-	height: 120px;
-}
-
-
-
-
-
-.parallax {
-  /* The image used */
-  background-image: url("https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799");
-
-  /* Set a specific height */
-  height: auto;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3em;
-
-  
-}
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-
-
-
+.simpleButton {
+  border-radius: 50px;
+  background-color: #FAA53F;
+  color: white;
+  padding: 1em;
+  margin-top: 1em; }
 
 /*estilo de carousel*/
 /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-#ClientSlider {
-   max-width: 900px;
-    margin: auto
-}
-
-.carousel-caption {
-    position: initial;
-    padding: 3rem 5rem;
-}
-
-
-@media(max-width:767px) {
-    .carousel-caption {
-        position: initial;
-        padding: 3rem 2rem;
-    }
-}
-
-@media(max-width:767px) {
-    .carousel-caption img {
-        width: 4rem;
-        margin-top: 1rem;
-    }
-}
-#name-caption {
-    margin-top: 0.5rem;
-}
-
-
-.carousel-control-prev {
-    justify-content: flex-start
-}
-
-.carousel-control-next {
-    justify-content: flex-end
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    transition: none;
-    opacity: unset
-}
-
-section.ClientSliderBackground{ 
+  -------------------------------------------------- */
+section.ClientSliderBackground {
   height: auto;
   position: relative;
   background: #FAA53F;
-  margin-bottom: 0px;
-
-}
-section.ClientSliderBackground:before {
+  margin-bottom: 0px; }
+  section.ClientSliderBackground div#ClientSlider {
+    max-width: 900px;
+    margin: auto; }
+    section.ClientSliderBackground div#ClientSlider .carousel-caption {
+      position: initial;
+      padding: 3rem 5rem; }
+  section.ClientSliderBackground:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -366,69 +76,255 @@ section.ClientSliderBackground:before {
     background-image: url(https://img.freepik.com/foto-gratis/primer-plano-dos-personas-negocios-dandose-mano-mientras-sentado-lugar-trabajo_1150-1816.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799);
     background-repeat: no-repeat;
     background-position: 40% 20%;
-    background-size: cover;
-}
+    background-size: cover; }
+  section.ClientSliderBackground .carousel-control-prev {
+    justify-content: flex-start; }
+  section.ClientSliderBackground .carousel-control-next {
+    justify-content: flex-end; }
+  section.ClientSliderBackground .carousel-control-prev,
+  section.ClientSliderBackground .carousel-control-next {
+    transition: none;
+    opacity: unset; }
 
-h1.CientSliderTitle{
-  z-index: 2;
+@media (max-width: 767px) {
+  .carousel-caption {
+    position: initial;
+    padding: 3rem 2rem; } }
+
+@media (max-width: 767px) {
+  .carousel-caption img {
+    width: 4rem;
+    margin-top: 1rem; } }
+
+.timeline {
   position: relative;
-  padding-top: 1em;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #50a1ff; }
+  .timeline .timeline-element {
+    position: relative;
+    width: 50%;
+    padding: 1rem 0;
+    padding-right: 2.5rem;
+    text-align: right; }
+    .timeline .timeline-element::before {
+      content: '';
+      position: absolute;
+      right: -8px;
+      top: 1.35rem;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid #50a1ff;
+      background-color: #fff; }
+    .timeline .timeline-element:nth-child(even)::before {
+      right: auto;
+      left: -8px; }
+    .timeline .timeline-element:nth-child(even) {
+      margin-left: 50%;
+      padding-left: 2.5rem;
+      padding-right: 0;
+      text-align: left; }
 
-}
+@media (max-width: 767.98px) {
+  .timeline::before {
+    left: 8px; } }
 
+@media (max-width: 767.98px) {
+  .timeline-element {
+    width: 100%;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-right: 0; } }
 
-/***********/
+@media (max-width: 767.98px) {
+  .timeline-element::before {
+    top: 1.25rem;
+    left: 1px; } }
+
+@media (max-width: 767.98px) {
+  .timeline-element:nth-child(even) {
+    margin-left: 0rem; } }
+
+@media (max-width: 767.98px) {
+  .timeline-element {
+    width: 100%;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-right: 0; } }
+
+@media (max-width: 767.98px) {
+  .timeline-element:nth-child(even)::before {
+    left: 1px; } }
+
+@media (max-width: 767.98px) {
+  .timeline-element::before {
+    top: 1.25rem; } }
+
+/******************************/
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto; }
+
+nav #LogoImg {
+  height: 120px; }
+
+nav .breadcrumb {
+  background-color: white; }
+
+section.container {
+  padding: 2em; }
+
+div {
+  /*seccion intro*/ }
+  div h1.IntroHeading {
+    margin: 0 6rem;
+    color: #00A49C; }
+  div h4.IntroSubheading {
+    margin: 2.5rem 6rem;
+    color: #2F4858; }
+
+img.IntroImg {
+  width: 100%; }
+
+a {
+  color: black; }
+  a:hover {
+    text-decoration: none;
+    color: #2F4858; }
+
+div.card {
+  border-radius: 50px; }
+
+#servicesList {
+  background-image: url(../img/wordcloud.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em;
+  height: auto; }
+  #servicesList div.HoverableCard:hover {
+    box-shadow: 10px 10px 5px grey; }
+
 .ebookBg {
   height: auto;
   background-image: url(../img/waves.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  margin:0;
+  margin: 0;
+  padding: 3em; }
+
+.cardShadow {
+  /*sombra de descarga de ebook*/
+  box-shadow: 10px 10px 5px grey;
+  padding: 2em;
+  margin-top: 3em;
+  transform: translateY(-30px); }
+
+hr {
+  height: 5px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #00A49C, #2F4858); }
+
+/* fotos de servicios en pagina services*/
+.services {
+  position: absolute;
+  /* Position the background text */
+  top: 0;
+  /* At the top*/
+  background: #2F4858;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  width: 80%;
+  padding: 50px; }
+
+.servicesImg {
+  width: 100%; }
+
+/*********************/
+#contactPage {
+  background-image: url(https://img.freepik.com/foto-gratis/empresaria-buscando-contacto-importante-telefono_1163-4256.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799);
+  background-size: cover;
+  background-position: center center; }
+
+.card-img {
+  width: 150px; }
+
+.blueBg {
+  background: #2F4858;
+  height: auto;
+  padding: 3em; }
+
+.OrangeText {
+  color: #FAA53F; }
+
+/***iconos de color en la pagina nosotras****/
+.BlueIcon {
+  font-size: 3em;
+  margin-top: 2em;
+  color: #2F4858; }
+
+.OrangeIcon {
+  font-size: 3em;
+  margin-top: 2em;
+  color: #FAA53F; }
+
+.TorquoiseIcon {
+  font-size: 3em;
+  margin-top: 2em;
+  color: #00A49C; }
+
+.LightblueIcon {
+  font-size: 3em;
+  margin-top: 2em;
+  color: #50a1ff; }
+
+/*************/
+#team {
+  background-image: url("https://img.freepik.com/foto-gratis/fuerza-personas-manos-exito-reunion_1150-1690.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 3em;
-}
+  height: auto; }
+
 /****estilos de pie de página*****/
 footer {
   background-color: #00A49C;
   display: grid;
-    grid-template-areas: 
-    "titleSocial titleSocial titleSocial titleSocial"
-    "Instagram Facebook Linkedin Email"
-    "Copyright Copyright Copyright Copyright";
-   grid-template-columns:repeat(4,1fr);
-    grid-column-gap: 1em;
-    grid-template-rows: 200px auto 100px;
-    grid-row-gap: 1em;
-    text-align: center;
-    width: 100vw;
-  }
-div.titleSocial{
-  grid-area: titleSocial;
-  color: white;
-}
-div.Copyright {
-  grid-area: Copyright;
+  grid-template-areas: "titleSocial titleSocial titleSocial titleSocial" "Instagram Facebook Linkedin Email" "Copyright Copyright Copyright Copyright";
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+  grid-template-rows: 100px auto 100px;
+  grid-row-gap: 1em;
   text-align: center;
-  margin-top: 2em;
-}
-input.transition:focus {
-   width: 200px;
-   font-size: 24px;
-}
-
-/*********************/
-.card-img {
-  width: 150px;
-}
-.meeting {
-  background-image:linear-gradient(white, #00A49C);
-  height: 50vh;
-  margin-bottom: 0px;
-}
-.animated{ 
-  position: relative;
-  background: #2F4858;
-  height: auto;
-  margin: 0px;
-  padding: 3em;
-  }
+  width: 100vw; }
+  footer div.titleSocial {
+    grid-area: titleSocial;
+    color: white; }
+  footer i.social-links {
+    font-size: 3em;
+    color: white; }
+  footer div.Copyright {
+    grid-area: Copyright;
+    text-align: center;
+    margin-top: 2em; }

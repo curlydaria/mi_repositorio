@@ -1,0 +1,67 @@
+/*estilo de carousel*/
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  section.ClientSliderBackground{ 
+    height: auto;
+    position: relative;
+    background: $myorange;
+    margin-bottom: 0px;
+    div#ClientSlider {
+        max-width: 900px;
+         margin: auto;
+         .carousel-caption {
+            position: initial;
+            padding: 3rem 5rem;
+        }
+    }
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.2;
+        background-image: url(https://img.freepik.com/foto-gratis/primer-plano-dos-personas-negocios-dandose-mano-mientras-sentado-lugar-trabajo_1150-1816.jpg?size=626&ext=jpg&ga=GA1.2.29921359.1597833799);
+        background-repeat: no-repeat;
+        background-position: 40% 20%;
+        background-size: cover;
+    }
+    .carousel-control-prev {
+        justify-content: flex-start
+    }
+    
+    .carousel-control-next {
+        justify-content: flex-end
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        transition: none;
+        opacity: unset
+    }
+    }
+    
+ @media(max-width:767px) {
+     .carousel-caption {
+         position: initial;
+         padding: 3rem 2rem;
+     }
+ }
+ 
+ @media(max-width:767px) {
+     .carousel-caption img {
+         width: 4rem;
+         margin-top: 1rem;
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
